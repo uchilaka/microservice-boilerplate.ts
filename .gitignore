@@ -1,0 +1,6 @@
+/node_modules
+/dist
+/coverage
+
+# Misc
+yarn.lock

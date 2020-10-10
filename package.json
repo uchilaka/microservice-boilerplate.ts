@@ -34,8 +34,6 @@
     "node": ">= 12.18.4"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.1.1",
-    "@typescript-eslint/parser": "^4.1.1",
     "fastify": "^3.4.1",
     "fastify-cors": "^4.1.0",
     "fastify-swagger": "^3.3.0",
@@ -57,7 +55,7 @@
     "@typescript-eslint/parser": "^4.4.0",
     "babel-eslint": "10.1.0",
     "babel-jest": "^26.3.0",
-    "eslint": "4.12.1",
+    "eslint": "^7.11",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jest": "^24.0.1",
     "eslint-plugin-jsx-a11y": "^6.3.1",

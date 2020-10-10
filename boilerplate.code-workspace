@@ -1,0 +1,47 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "terminal.integrated.fontSize": 14,
+    "editor.tabSize": 2,
+    // Making Built-in VSCode tools the default formatter for TS
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.detectIndentation": false,
+    // Adjust this to line up with your linting max-length
+    "editor.rulers": [
+      115
+    ],
+    "editor.formatOnPaste": false,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "vscode.typescript-language-features",
+      "editor.formatOnType": true,
+      "editor.formatOnSave": true,
+      "editor.codeActionsOnSave": {
+        "source.fixAll": true
+      }
+    },
+    "prettier.enable": false,
+    //// ESLint
+    "eslint.format.enable": true,
+    "eslint.packageManager": "yarn",
+    "eslint.run": "onType",
+    "eslint.validate": [
+      "typescript",
+      "typescriptreact",
+      "javascript",
+      "javascriptreact"
+    ],
+  },
+  "extensions": {
+    "recommendations": [
+      "msjsdiag.debugger-for-edge",
+      "dbaeumer.vscode-eslint"
+    ]
+  }
+}

@@ -6,7 +6,7 @@ This boilerplate illustrates a number of concepts:
 
 - Using `eslint` with a TypeScript project
 - Configuring your build and type-checking scripts
-- Integrating `babel` + `jest` for your tests (coming soon)
+- Integrating `babel` + `jest` for your tests
 
 ## Questions?
 

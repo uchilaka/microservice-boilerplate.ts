@@ -1,7 +1,8 @@
 {
   "folders": [
     {
-      "path": "."
+      "path": ".",
+      "name": "Boilerplate Microservice"
     }
   ],
   "settings": {

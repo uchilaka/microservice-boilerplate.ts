@@ -1,6 +1,6 @@
 import factoryInstance from './factory'
 
-const APP_PORT: number = Number(process.env.PORT ?? 3020)
+const APP_PORT = Number(process.env.PORT ?? 3020)
 
 factoryInstance.listen(APP_PORT, '0.0.0.0', (err, address) => {
   if (err) {

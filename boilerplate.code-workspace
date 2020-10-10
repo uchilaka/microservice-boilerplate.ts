@@ -40,6 +40,7 @@
   },
   "extensions": {
     "recommendations": [
+      "firsttris.vscode-jest-runner",
       "msjsdiag.debugger-for-edge",
       "dbaeumer.vscode-eslint"
     ]

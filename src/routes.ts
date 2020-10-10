@@ -1,14 +1,14 @@
-import { FastifyInstance } from "fastify";
-import { RouteShorthandOptions } from "fastify"
+import { FastifyInstance } from 'fastify'
+import { RouteShorthandOptions } from 'fastify'
 
 const plainOptions: RouteShorthandOptions = {
   schema: {
     response: {
       200: {
-        type: 'string'
-      }
-    }
-  }
+        type: 'string',
+      },
+    },
+  },
 }
 
 const pingPongOptions: RouteShorthandOptions = {
@@ -18,15 +18,15 @@ const pingPongOptions: RouteShorthandOptions = {
         type: 'object',
         properties: {
           pong: {
-            type: 'string'
+            type: 'string',
           },
           url: {
-            type: 'string'
+            type: 'string',
           },
-        }
-      }
-    }
-  }
+        },
+      },
+    },
+  },
 }
 
 function hoistRoutes(server: FastifyInstance): FastifyInstance {
@@ -35,7 +35,7 @@ function hoistRoutes(server: FastifyInstance): FastifyInstance {
   })
 
   server.get('/ping', pingPongOptions, async () => {
-    return { pong: 'it worked!' }
+    return { pong: 'it worked!', }
   })
 
   server.get('/', plainOptions, (_, reply) => {

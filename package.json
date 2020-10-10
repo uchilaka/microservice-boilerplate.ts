@@ -1,6 +1,6 @@
 {
   "name": "@uchilaka/microservice-boilerplate.ts",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "MicroService boilerplate, powered by Fastify, written in TypeScript",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

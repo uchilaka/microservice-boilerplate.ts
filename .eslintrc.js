@@ -24,8 +24,12 @@ module.exports = {
     'jest/globals': true,
   },
   rules: {
-    'eol-last': [1, 'always',],
-    'no-unused-vars': 0,
+    'eol-last': [
+      1, 'always',
+    ],
+    'no-unused-vars': 'off',
+    'unused-imports/no-unused-imports-ts': 'warn',
+    'unused-imports/no-unused-vars': 'warn',
     '@typescript-eslint/no-unused-vars': [
       // https://eslint.org/docs/rules/no-unused-vars#options
       'warn',
@@ -45,8 +49,10 @@ module.exports = {
         functions: 'never',
       },
     ],
-    semi: ['warn', 'never',],
-    quotes: ['warn', 'single',],
+    semi: ['warn', 'never',
+    ],
+    quotes: ['warn', 'single',
+    ],
     'no-trailing-spaces': 'warn',
     'max-len': [
       // https://eslint.org/docs/rules/max-len#options
@@ -68,7 +74,8 @@ module.exports = {
         requireForBlockBody: false,
       },
     ],
-    'space-in-parens': ['warn', 'never',],
+    'space-in-parens': ['warn', 'never',
+    ],
     'object-curly-spacing': [
       'warn',
       'always',
@@ -76,6 +83,7 @@ module.exports = {
         objectsInObjects: true,
       },
     ],
-    quotes: ['warn', 'single',],
+    quotes: ['warn', 'single',
+    ],
   },
 }

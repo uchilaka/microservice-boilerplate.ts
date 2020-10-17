@@ -65,7 +65,6 @@
   "exclude": [
     "dist/",
     "babel.config.js",
-    ".eslintrc.js",
     "jest.*.js"
   ]
 }

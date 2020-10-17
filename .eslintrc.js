@@ -25,7 +25,8 @@ module.exports = {
   },
   rules: {
     'eol-last': [1, 'always',],
-    'no-unused-vars': [
+    'no-unused-vars': 0,
+    '@typescript-eslint/no-unused-vars': [
       // https://eslint.org/docs/rules/no-unused-vars#options
       'warn',
       {

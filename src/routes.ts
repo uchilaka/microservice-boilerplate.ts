@@ -1,5 +1,6 @@
-import { FastifyInstance } from 'fastify'
+import { FastifyInstance, FastifyPluginAsync } from 'fastify'
 import { RouteShorthandOptions } from 'fastify'
+import helmet from 'fastify-helmet'
 
 const plainOptions: RouteShorthandOptions = {
   schema: {
@@ -43,6 +44,11 @@ function hoistRoutes(server: FastifyInstance): FastifyInstance {
   })
 
   return server
+}
+
+export const routesPlugin: FastifyPluginAsync = async fastify => {
+  await fastify.register(helmet)
+  hoistRoutes(fastify)
 }
 
 export default hoistRoutes

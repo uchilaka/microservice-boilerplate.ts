@@ -1,12 +1,9 @@
 import cors from 'fastify-cors'
 import middie from 'middie'
 import fastify, { FastifyInstance } from 'fastify'
-import hoistRoutes from './routes'
-import routesPlugin from './plugin.routes'
+import { routesPlugin } from './routes'
 
 const instance: FastifyInstance = fastify({ logger: true, })
-
-hoistRoutes(instance)
 
 instance.register(cors, {
   origin: [/(\.)?larcity\.(com|dev|local)(:3030)?$/, /(\.)?lar\.city$/,],
@@ -20,7 +17,11 @@ instance.register(cors, {
 
 export const setup = async (): Promise<FastifyInstance> => {
   await instance.register(middie)
-  instance.register(routesPlugin, { prefix: '/v2', })
+  /**
+   * You can pass a second argument for plugin options to specify route prefix, for example
+   * More on plugins: https://www.fastify.io/docs/master/Plugins/
+   */
+  instance.register(routesPlugin /*, { prefix: '/v2', }*/)
   return instance
 }
 

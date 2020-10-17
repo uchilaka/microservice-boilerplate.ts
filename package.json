@@ -28,7 +28,7 @@
     "build:changelog": "auto-changelog --output ./markdown/HISTORY.md --template keepachangelog",
     "start": "PORT=3020 yarn build && node dist/server.js",
     "debug": "tsc -w -p tsconfig.json & nodemon -q -w dist dist/server.js",
-    "prepublish": "yarn build:tsc"
+    "prepublish": "yarn build:tsc && yarn build:changelog"
   },
   "engines": {
     "npm": ">= 6.14.6",

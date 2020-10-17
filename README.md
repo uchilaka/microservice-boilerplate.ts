@@ -8,6 +8,10 @@ This boilerplate illustrates a number of concepts:
 - Configuring your build and type-checking scripts
 - Integrating `babel` + `jest` for your tests
 
+## Change Log
+
+[View change log here](markdown/HISTORY.md)
+
 ## Questions?
 
 Hit me up [@uchilaka on Twitter](https://twitter.com/uchechilaka) or [uche@lar.city](mailto:uche@lar.city?subject=Question%20about%20fastify%20TS%20boilerplate)
